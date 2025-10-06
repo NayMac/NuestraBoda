@@ -21,7 +21,7 @@ export class AppComponent implements  AfterViewInit  {
   // Listener para click
   const removeClickListener = this.renderer.listen('document', 'click', () => {
     if (!played) {
-      audio.src = 'assets/musica/miCancion.mp3';
+      audio.src = 'assets/musica/cancion.mp3';
       audio.play().catch(err => console.log('Error al reproducir audio:', err));
       played = true;
 
