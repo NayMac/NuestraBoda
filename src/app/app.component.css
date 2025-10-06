@@ -3,7 +3,7 @@
   height: 100%;
   overflow: hidden; /* evita que se desborde */
   text-align: center;
-   background: url("/assets/Imagenes/papel.avif") repeat-x center center fixed;;/*no-repeat center center fixed;*/
+   background: url("/assets/Imagenes/plantilla.avif") repeat-x center center fixed;;/*no-repeat center center fixed;*/
 background-size: cover;
   /*animation: fondoAnimado 20s linear infinite;*/
    position: relative;   

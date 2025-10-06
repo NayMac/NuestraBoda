@@ -7,9 +7,19 @@ import { AfterViewInit, Component, ElementRef, HostListener, Renderer2, ViewChil
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild('audioRef', { static: false }) audioElement!: ElementRef<HTMLAudioElement>;
-  private played = false;
+   played = false;
 
   constructor(private renderer: Renderer2) {}
+
+
+  playAudio() {
+    if (!this.played && this.audioElement) {
+      const audio = this.audioElement.nativeElement;
+      audio.src = 'assets/Musica/cancion.mp3';
+      audio.play().catch(err => console.log('Error al reproducir audio:', err));
+      this.played = true;
+    }
+  }
 
   ngAfterViewInit() {
     const audio = this.audioElement.nativeElement;
@@ -20,7 +30,7 @@ export class AppComponent implements AfterViewInit {
         audio.play().catch(err => console.log('Error al reproducir audio:', err));
         this.played = true;
 
-        // Remueve los listeners después del primer toque
+        // Remover listeners después de reproducir
         removeClick();
         removeTouch();
       }
