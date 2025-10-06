@@ -1,0 +1,134 @@
+.contenedor {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* evita que se desborde */
+  text-align: center;
+   background: url("/assets/Imagenes/gris2.png") repeat-x center center fixed;;/*no-repeat center center fixed;*/
+background-size: cover;
+  /*animation: fondoAnimado 20s linear infinite;*/
+   position: relative;   
+}
+
+
+.contenedor img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  margin: 0 auto;
+}
+.bowlby-one-sc-regular {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.encabezados {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.saira {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.fondoTexto{
+   background: url("/assets/Imagenes/luces.gif") repeat-x center center fixed;;/*no-repeat center center fixed;*/
+
+}
+/* ================= Fondo animado ================= */
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/Imagenes/fondol2.jpg") repeat-x;
+  background-size: auto 100%;
+  opacity: 0.5;              /* ajusta la opacidad del fondo */
+  z-index: -1;
+  animation: fondoScroll 20s linear infinite;
+}
+
+@keyframes fondoScroll {
+  from { background-position: 0 0; }
+  to   { background-position: 100% 0; }
+}
+
+.contenedor2{
+  overflow: hidden; /* evita que se desborde */
+  
+   background: url("/assets/Imagenes/DSC_5020.jpg") repeat-x center center fixed;;/*no-repeat center center fixed;*/
+ width: 100%;
+  height: 100%;
+   background-size: contain;
+  background-position: center;
+
+  aspect-ratio: 16 / 9;  /* proporción de la imagen */
+}
+
+
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 15px;
+}
+
+/* ================= Texto ================= */
+h1 {
+    
+  position: relative;
+  top: 0px;
+  font-size: 3rem;
+  color: white;
+  opacity: 50; /* todos empiezan invisibles */
+  text-align: center;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Para hacer scroll largo */
+:host {
+  display: block;
+  height: 2vh;
+  margin: 0;
+}
+
+@keyframes fondoAnimado {
+  from { background-position: 0 0; }
+  to   { background-position: 100% 0; }
+}
+.entrada {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
