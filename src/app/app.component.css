@@ -38,6 +38,38 @@ background-size: cover;
     "wdth" 100;
 }
 
+.contador {
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  color: #33292e;
+  font-size: 2rem;
+ 
+}
+
+.tiempo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.unidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  border-radius: 1px;
+}
+
+.unidad span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.unidad p {
+  margin: 0;
+ 
+}
+
 .fondoTexto{
    background: url("/assets/Imagenes/luces.gif") repeat-x center center fixed;;/*no-repeat center center fixed;*/
 
