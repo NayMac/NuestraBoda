@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -43,29 +42,34 @@
     <!--<h1 [style.transform]="textoTransform" [style.opacity]="textoOpacity">
   ¡Hola, me muevo con el scroll!
 </h1>-->
- <audio #audioRef loop></audio>
-    <div class="" style="background-color: black;  ">
+    <audio #audioRef loop></audio>
+    <div class="fondoTexto" style="background-color: black;  ">
       <!--<h1 style="color: white;" class="tangerine-bold mi-titulo">Edwin & Naye</h1>-->
-      <p class="display-4 font-weight-normal tangerine-bold" style="color: white;font-size: 50px; font-weight: 900; padding-top: 15px ">Save the Date</p>
+      <p class="display-4 font-weight-normal tangerine-bold"
+        style="color: white;font-size: 50px; font-weight: 900; padding-top: 15px ">Save the Date</p>
 
       <p class=" roboto" style="color: white; padding-top: -5px "> Viernes 30 de Enero del 2026</p>
       <img src="assets/Imagenes/DSC_5020.jpg" alt="Imagen">
     </div>
 
-    <div class="col-md-5 p-lg-5 mx-auto my-5 ">
+    <div class="fondoTexto col-md-5 p-lg-5 mx-auto my-5 ">
       <h1 style="color: black; font-size: 70px; font-weight: 900; " class="tangerine-bold mi-titulo">Edwin & Naye</h1>
-      <p class="saira">NUESTRO AMOR HA SIDO UN VIAJE INCREIBLE, Y QUEREMOS QUE SEAS PARTE DE LA MEJOR AVENTURA: NUESTRA
+      <p class="lead font-weight-normal entrada">Nuestro amor ha sido un viaje increíble, y queremos que seas parte de
+        la mejor aventura: Nuestra
+        Boda!
+      </p>
+      <!--<p class="saira">NUESTRO AMOR HA SIDO UN VIAJE INCREIBLE, Y QUEREMOS QUE SEAS PARTE DE LA MEJOR AVENTURA: NUESTRA
         BODA!
       </p>
-
+      -->
     </div>
-      
-   
 
-    <div>
-       <p class=" tangerine-bold" style=" font-size: 30px; font-weight: 900; color: black; ">Faltan</p>
-       <div class="contador" style=" margin-top: -25px;">
-       
+
+
+    <div class="fondoTexto">
+      <p class=" tangerine-bold" style=" font-size: 30px; font-weight: 900; color: black; ">Faltan</p>
+      <div class="contador" style=" margin-top: -25px;">
+
         <div class="tiempo">
           <div class="unidad">
             <span>{{ dias }}</span>
@@ -87,10 +91,19 @@
       </div>
     </div>
 
-    
+
     <div class="col-md-5 p-lg-5 mx-auto my-5 " style="padding: 10px;">
       <img src="assets/Imagenes/Z06_0542.jpg" alt="Imagen">
       <br>
+      <div style="padding: 0px; " class="fondoTexto">
+        <p class="lead font-weight-normal entrada">Nos complace anunciar nuestro matrimonio y queremos compartir este
+          gran momento contigo.</p>
+        <p class="lead font-weight-normal entrada"> ¡Únanse a nosotros en nuestra boda para ser testigos de nuestro amor
+          y nuestro compromiso de luchar juntos!</p>
+        <p class="lead font-weight-normal entrada">Te invitamos a ser parte de este día inolvidable.</p>
+        <p class="lead font-weight-normal entrada"> Agradecemos tu presencia con nosotros.</p>
+      </div>
+      <!-- 
       <div style="padding: 0px;">
         <p class="saira">NOS COMPLACE ANUNCIAR NUESTRO MATRIMONIO Y QUEREMOS COMPARTIR ESTE GRAN MOMENTO CONTIGO.</p>
         <p class="saira"> ¡ÚNANSE A NOSOTROS EN NUESTRA BODA PARA SER TESTIGOS DE NUESTRO AMOR Y NUESTRO COMPROMISO DE
@@ -98,7 +111,7 @@
         <p class="saira">TE INVITAMOS A SER PARTE DE ESTE DÍA INOLVIDABLE.</p>
         <p class="saira"> AGRADECEMOS TU PRESENCIA CON NOSOTROS.</p>
       </div>
-
+      -->
 
     </div>
 
@@ -141,19 +154,57 @@
       <p class="display-4 font-weight-normal tangerine-regular" style="color: white; ">Itinerario</p>
 
     </div>
-    <div class="col-md-5 p-lg-5 mx-auto my-5 " style="padding-left: 25%; padding-right: 25%; text-align: left;">
+    <div class="col-md-5 p-lg-5 mx-auto my-5 " style="padding-left: 0%; padding-right: 0%; ">
+      <div class="row">
+        <div class="col-5" style="text-align: right;">
+          <p class="lead font-weight-normal entrada">05:00 p.m. |</p>
+          <p class="lead font-weight-normal entrada">07:00 p.m. |</p>
+        </div>
+        <div class="col-7" style="text-align: left;">
+          <p class="lead font-weight-normal entrada">Ceremonia Religiosa</p>
+          <p class="lead font-weight-normal entrada">Recepción y Cóctel <br>de Bienvenida</p>
 
-      <p>05:00 p.m. Ceremonia Religiosa</p>
-      <p>07:00 p.m. Recepción</p>
-      <p>08:00 p.m. Cena</p>
-      <p>09:00 p.m. Inicio de Fiesta</p>
-      <p>10:00 p.m. Baile de Novios </p>
-      <p>01:00 a.m. Fin de Fiesta</p>
-      
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-5" style="text-align: right;">
+          <p class="lead font-weight-normal entrada">08:00 p.m. |</p>
+         
+        </div>
+        <div class="col-7" style="text-align: left;">
+          <p class="lead font-weight-normal entrada">Cena y Entrada de <br>Novios</p>
+          
+        </div>
+      </div>
+       <div class="row">
+        <div class="col-5" style="text-align: right;">
+          
+          <p class="lead font-weight-normal entrada">09:00 p.m. |</p>
+          <p class="lead font-weight-normal entrada">10:00 p.m. |</p>
+          <p class="lead font-weight-normal entrada">01:00 a.m. |</p>
+        </div>
+        <div class="col-7" style="text-align: left;">
+          
+          <p class="lead font-weight-normal entrada">Fiesta y Baile</p>
+          <p class="lead font-weight-normal entrada">Baile de Novios </p>
+          <p class="lead font-weight-normal entrada">Fin de Fiesta</p>
+        </div>
+      </div>
+      <!-- 
+      <p  class="lead font-weight-normal entrada">05:00 p.m. Ceremonia Religiosa</p>
+      <p  class="lead font-weight-normal entrada">07:00 p.m. Recepción</p>
+      <p  class="lead font-weight-normal entrada">08:00 p.m. Cena</p>
+      <p  class="lead font-weight-normal entrada">09:00 p.m. Inicio de Fiesta</p>
+      <p  class="lead font-weight-normal entrada">10:00 p.m. Baile de Novios </p>
+      <p  class="lead font-weight-normal entrada">01:00 a.m. Fin de Fiesta</p>
+      -->
 
     </div>
-    <div class="col-md-5 p-lg-5 mx-auto my-5 " >
-<img style="width: 18%; height: 18%;" src="assets/Imagenes/itinerario.png" alt="Imagen">
+    <div class="col-md-5 p-lg-5 mx-auto my-5 ">
+      <img style="width: 18%; height: 18%;" src="assets/Imagenes/itinerario.png" alt="Imagen">
     </div>
 
     <div style="background-color: black;">
@@ -164,9 +215,17 @@
     <div class="col-md-5 p-lg-5 mx-auto my-5 " style="padding: 10px;">
 
       <h1 style="color: black;" class="tangerine-regular"> ¿Que debería usar?</h1>
-      <p class="lead font-weight-normal entrada">Para esta ocasión especial, solicitamos a todos nuestros invitados respetar el código de vestimenta formal. 
-        Se sugiere a los caballeros un traje oscuro y corbata, y a las damas, vestidos
-        largos o de cóctel. Nos encantaría verte en tu mejor atuendo formal, ya que el ingreso a la ceremonia y celebración estará reservado únicamente para quienes cumplan con este código. ¡Tu elegancia ayudará a hacer de nuestra boda un día inolvidable!</p>
+      <p class="lead font-weight-normal entrada">Para esta ocasión especial, solicitamos a todos nuestros invitados
+        respetar el código de vestimenta formal.
+        <br>
+        Caballeros: traje oscuro y corbata
+        <br>
+        Damas: vestidos largos o de cóctel.
+        <br>
+        Nos encantaría verte en tu mejor atuendo formal, ya que el ingreso a la ceremonia y celebración estará reservado
+        únicamente para quienes cumplan con este código. ¡Tu elegancia ayudará a hacer de nuestra boda un día
+        inolvidable!
+      </p>
       <img style="width: 18%; height: 18%;" src="assets/Imagenes/vestido.png" alt="Imagen">
       <br>
       <br>
@@ -187,19 +246,21 @@
 
     </div>
 
-    <div class="col-md-5 p-lg-5 mx-auto my-5 " style="padding: 10px;">
+    <div class="col-md-5 p-lg-5 mx-auto my-5 fondoTexto" style="padding: 10px;">
       <img src="assets/Imagenes/Z06_0563.jpg" alt="Imagen">
-    <br>
-      <p class="lead font-weight-normal entrada">Su compañía en este día tan especial es el regalo más valioso para nosotros. 
-        Si además desean brindarnos un detalle, agradeceremos de corazón una contribución monetaria para ayudarnos a vivir la luna 
+      <br>
+      <p class="lead font-weight-normal entrada ">Su compañía en este día tan especial es el regalo más valioso para
+        nosotros.
+        Si además desean brindarnos un detalle, agradeceremos de corazón una contribución monetaria para ayudarnos a
+        vivir la luna
         de miel de nuestros sueños.
       </p>
 
-<img style="width: 25%; height: 25%;" src="assets/Imagenes/corazones.png" alt="Imagen">
+      <img style="width: 20%; height: 20%;" src="assets/Imagenes/hucha.png" alt="Imagen">
 
     </div>
 
-   
+
 
     <div class=" " style="background-color: black;">
       <!--<h1 style="color: white;" class="tangerine-bold mi-titulo">Edwin & Naye</h1>-->
