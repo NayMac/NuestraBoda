@@ -69,6 +69,13 @@ background-size: cover;
   margin: 0;
  
 }
+.textoLucido{
+  color: darkgray;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+
+}
 
 .fondoTexto{
    background: url("/assets/Imagenes/luces2.gif") repeat-x center center fixed;;/*no-repeat center center fixed;*/
